@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Roboto&display=swap");
+html {
+  font-size: 10px;
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+.link {
+  flex: 1;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Barlow" sans-serif;
+}
+/*end reset*/
+
+.container1 {
+  max-width: 960px;
+  margin: auto;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  background-color: #061a40;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* stilizare header */
+header {
+  background-color: #061a40;
+  color: #fafafa;
+  padding: 10px 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+header ul a {
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+.logo img {
+  display: block;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  position: relative;
+  color: #faf4d3;
+  font-size: 2rem;
+  transition: color 0.5s;
+}
+.link:hover {
+  color: #f7accf;
+}
+.link::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #2e933c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 1s;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #d1ac00;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  transition: width 1s;
+}
+.link:hover::after {
+  width: 100%;
+}
+
+.list1 {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  position: relative;
+  color: #faf4d3;
+  font-size: 2rem;
+  transition: color 0.5s;
+}
+
+.list1:hover {
+  color: #f7accf;
+}
+.list1::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #2e933c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 1s;
+}
+
+.list1:hover::before {
+  width: 100%;
+}
+
+.list1::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #d1ac00;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  transition: width 1s;
+}
+.list1:hover::after {
+  width: 100%;
+}
+
+.dropdown1 {
+  position: absolute;
+  display: none;
+  background-color: #392759;
+  color: #e8f0ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  z-index: 1;
+  text-align: center;
+  margin: auto 7px;
+}
+
+.dropdown1:hover {
+  display: block;
+}
+
+.list2 {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  position: relative;
+  color: #faf4d3;
+  font-size: 2rem;
+  transition: color 0.5s;
+}
+
+.list2:hover {
+  color: #f7accf;
+}
+.list2::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #2e933c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 1s;
+}
+
+.list2:hover::before {
+  width: 100%;
+}
+
+.list2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #d1ac00;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  transition: width 1s;
+}
+.list2:hover::after {
+  width: 100%;
+}
+
+.dropdown2 {
+  position: absolute;
+  display: none;
+  background-color: #392759;
+  color: #e8f0ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  z-index: 1;
+  text-align: center;
+  margin: auto 7px;
+}
+
+.list2:hover .dropdown2 {
+  display: block;
+}
+
+/*end header*/
+
+.container2 {
+  max-width: 960px;
+  margin: auto;
+}
+
+.height {
+  height: 2000px;
+}
+
+.top-section {
+  height: calc(100vh - 50px);
+  background-clip: border-box;
+  background-image: url(https://placehold.it/1920x1080);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+h1 {
+  font-family: "Barlow" sans-serif;
+  font-size: 50px;
+  font-display: center;
+}
+.img2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: left;
+  align-content: stretch;
+  padding: 10px;
+  background-color: #e6fafc;
+}
+
+.certificari {
+  font-family: "Barlow" sans-serif;
+  font-display: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  align-content: flex-start;
+}
+h2 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  text-align: left;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.table {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+}
+th {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+td {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.text {
+  font-family: "Barlow" sans-serif;
+  background-color: #e6fafc;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.calendar {
+  font-family: "Barlow" sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.info {
+  background-color: #e6fafc;
+  border: 2px solid black;
+  padding: 2px 2px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 5rem;
+  align-self: flex-start;
+  position: static;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 4rem;
+  align-self: flex-start;
+  position: static;
+}
+.button {
+  display: inline-block;
+  margin-top: 4rem;
+  background-color: #58bc82;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  font-family: sans-serif;
+  border-radius: 1rem;
+  width: 20%;
+  position: static;
+  color: #6874e8;
+}
+
+.text {
+  position: relative;
+  left: 4rem;
+}

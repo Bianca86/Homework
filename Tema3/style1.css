@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Roboto&display=swap");
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0%;
+  font-family: "Barlow", sans-serif;
+}
+
+.link {
+  flex: 1;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Barlow" sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+}
+.col-4 {
+  flex: 4;
+}
+.col-8 {
+  flex: 8;
+}
+.col-2 {
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* stilizare header */
+header {
+  background-color: #061a40;
+  color: #fafafa;
+  padding: 10px 15px;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-section {
+  height: calc(100vh - 50px);
+  background-image: url(https://placehold.it/1920x1080);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+h1 {
+  font-family: "Barlow" sans-serif;
+  font-size: 50px;
+  font-display: center;
+}
+.img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: left;
+  align-content: stretch;
+  padding: 10px;
+  background-color: #e6fafc;
+}
+
+.certificari {
+  font-family: "Barlow" sans-serif;
+  font-display: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  align-content: flex-start;
+}
+h2 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  text-align: left;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.table {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+}
+th {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+td {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.text {
+  font-family: "Barlow" sans-serif;
+  background-color: #e6fafc;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.calendar {
+  font-family: "Barlow" sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.info {
+  background-color: #e6fafc;
+  text-align: center;
+  padding: 20px;
+  padding-top: 10px;
+}
